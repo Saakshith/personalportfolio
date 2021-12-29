@@ -468,7 +468,8 @@ form > input[type="text"]{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 2rem;
+    /* align-items: center; */
 }
 
 .intro-text{
