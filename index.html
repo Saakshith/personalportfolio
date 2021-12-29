@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container" id="fullPage">
-        <section id="landing-page" class="section">
+        <section id="landing-page" class="section" data-anchor="firstPage">
             <nav>
                 <div class="logo-container">
                     <h1 class="logo">SC</h1>
@@ -19,12 +19,12 @@
                 <label for="check" class="checkbtn">
                     <i class="fas fa-bars"></i>
                 </label>
-                <ul class="nav-link-container nav-link-container-one">
-                    <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#about-me-section">About</a></li>
-                    <li class="nav-link"><a href="#projects-section">Projects</a></li>
-                    <li class="nav-link"><a href="#skills-section">Skills</a></li>
-                    <li class="nav-link"><a href="#contact-section">Contact Us</a></li>
+                <ul class="nav-link-container nav-link-container-one" id="menu">
+                    <li class="nav-link" data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+                    <li class="nav-link" data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+                    <li class="nav-link" data-menuanchor="thirdPage"><a href="#thirdPage">Projects</a></li>
+                    <li class="nav-link" data-menuanchor="fourthPage"><a href="#fourthPage">Skills</a></li>
+                    <li class="nav-link" data-menuanchor="fifthPage"><a href="#fifthPage">Contact Us</a></li>
                 </ul>
                 <ul class="nav-link-container">
                     <li class="nav-link social-icon">
@@ -69,12 +69,12 @@
                 </div>
             </div>
         </section>
-        <section id="about-me-section" class="section">
+        <section id="about-me-section" class="section" data-anchor="secondPage">
             <div class="about-me-child-section">
                 <div class="about-me-text-container">
                     <h1 class="title about-me-title">About Me</h1>
                     <p class="about-me-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Id porta nibh venenatis cras sed. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Ut etiam sit amet nisl purus in mollis nunc. Orci dapibus ultrices in iaculis. Dictum fusce ut placerat orci nulla pellentesque dignissim. Dignissim enim sit amet venenatis urna cursus eget. Massa enim nec dui nunc mattis enim. Vel elit scelerisque mauris pellentesque.
+                        Hi, I'm Saakshith Chikoti. Im currently 14 years old with an intrest in frontend development and a little bit of backend too. I would like to describe myself as a hard-working and commited induvidual, and I won't back down from a challenge. When i'm not on the development grind I enjoy playing tennis, spending time with my family and friends and also working-out. 
                     </p>
                 </div>
                 <div class="about-me-img-container">
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </section>
-        <section id="projects-section" class="section">
+        <section id="projects-section" class="section" data-anchor="thirdPage">
             <div class="projects-child-section">
                 <div class="title-container">
                     <h1 class="title">Projects</h1>
@@ -99,16 +99,16 @@
                     </div>
                     <div class="card">
                         <div class="img-section">
-                            <img src="./assets/placeholder-img.png" alt="">
+                            <img src="./assets/Screenshot 2021-12-28 143753.png" alt="">
                         </div>
                         <div class="text-section">
                             <h2 class="project-title">Fake E-Commerce Shop</h2>
-                            <p class="project-description">Fake e-commerce website with a full payment gateway. Made using React and the Stripe API.</p>
+                            <p class="project-description">A fully functioning e-commerce website with a full payment gateway. Made using React and the Stripe API.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="img-section">
-                            <img src="./assets/placeholder-img.png" alt="">
+                            <img src="./assets/virtual_closet.png" alt="">
                         </div>
                         <div class="text-section">
                             <h2 class="project-title">Python Virtual Closet App</h2>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="card">
                         <div class="img-section">
-                            <img src="./assets/placeholder-img.png" alt="">
+                            <img src="./assets/helmet-testing-science-website.png" alt="">
                         </div>
                         <div class="text-section">
                             <h2 class="project-title">Helmet Drop Testing Website</h2>
@@ -127,7 +127,7 @@
                 </div>    
             </div>
         </section>
-        <section id="skills-section" class="section">
+        <section id="skills-section" class="section" data-anchor="fourthPage">
             <div class="skills-child-section">
                 <div class="title-container">
                     <h1 class="title skills-title">Skills</h1>
@@ -238,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact-section" class="section">
+        <section id="contact-section" class="section" data-anchor="fifthPage">
             <div class="contact-child-section">
                 <div class="contact-svg-container">
                     <img src="./assets/undraw_software_engineer_re_fyew.svg" alt="" class="contact-svg">
@@ -302,6 +302,7 @@
         
         new fullpage('#fullPage', {
             autoScrolling: true,
+            responsiveWidth: 900,
         })
     </script>
     <script>
