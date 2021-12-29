@@ -302,7 +302,7 @@
         
         new fullpage('#fullPage', {
             autoScrolling: true,
-            responsiveWidth: 900,
+            // responsiveWidth: 900,
         })
     </script>
     <script>
@@ -310,7 +310,7 @@
         tl.to('.text', {y: '0%', duration: 1, stagger: 0.25});
         tl.to('.slider', {y: "-100%", duration: 1.5, delay: 1});
         tl.to('.intro', {y: '-100%', duration: 1}, "-=1.1 ");
-        tl.fromTo('nav', {opacity: 0, y:-50}, {opacity: 1, y:0, duration: 0.5}, '-=0.5');
+        tl.fromTo('nav', {opacity: 0, y:-50}, {opacity: 1, y:0, duration: 0.5}, '-=0.5'); 
         tl.fromTo('.hero-text-section', {opacity: 0, x:50}, {opacity: 1, x: 0, duration: 0.5}, '-=0.8');
         tl.fromTo('.hero-img-section', {opacity: 0, x:-50}, {opacity: 1, x: 0, duration: 0.5},)
     </script>

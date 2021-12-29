@@ -208,7 +208,7 @@ section{
 
 .about-me-text{
     font-family: var(--mainFont);
-    font-size: clamp(0.5rem, 1.3vw, 3rem);
+    font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 
 .about-me-img-container{
@@ -497,6 +497,10 @@ form > input[type="text"]{
 .hide > span{
     transform: translateY(100%);
     display: inline-block;
+}
+
+.fp-tableCell{
+    height: 100vh
 }
 
 @media screen and (max-width: 700px){
